@@ -9,13 +9,13 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: Color.fromARGB(255, 18, 18, 18),
+          backgroundColor: const Color.fromARGB(255, 18, 18, 18),
           body: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 80,
                 ),
                 Row(
@@ -24,7 +24,7 @@ class App extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Text(
+                        const Text(
                           'Hey Selena',
                           style: TextStyle(
                             color: Colors.white,
@@ -42,7 +42,7 @@ class App extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 120,
                 ),
                 Text(
@@ -50,7 +50,7 @@ class App extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.white.withOpacity(0.8), fontSize: 25),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Text(
@@ -60,7 +60,7 @@ class App extends StatelessWidget {
                       fontSize: 50,
                       fontWeight: FontWeight.w700),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -70,7 +70,7 @@ class App extends StatelessWidget {
                         color: Colors.amber,
                         borderRadius: BorderRadius.circular(45),
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding:
                             EdgeInsets.symmetric(vertical: 20, horizontal: 50),
                         child: Text(
