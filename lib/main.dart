@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// 정적 화면 
 void main() {
   runApp(App());
 }
