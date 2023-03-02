@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-// 정적 화면 
+
+// 정적 화면
 void main() {
   runApp(App());
 }
@@ -33,7 +34,7 @@ class App extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Welcome Back',
+                          'Welcome Back!',
                           style: TextStyle(
                             fontSize: 18,
                             color: Colors.white.withOpacity(0.8),
