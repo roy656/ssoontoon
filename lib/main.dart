@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ssoontoon/widgets/button.dart';
 
 // 정적 화면
 void main() {
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
       home: Scaffold(
           backgroundColor: const Color.fromARGB(255, 18, 18, 18),
           body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -66,21 +67,17 @@ class App extends StatelessWidget {
                   height: 20,
                 ),
                 Row(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.amber,
-                        borderRadius: BorderRadius.circular(45),
-                      ),
-                      child: const Padding(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 20, horizontal: 50),
-                        child: Text(
-                          'Transfer',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ),
-                    ),
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    Button(
+                        // Button 역할을 하는 Container 클래스를 만들어서 사용
+                        text: 'Transger',
+                        bgColor: Color(0xfff1b33b),
+                        textColor: Colors.black),
+                    Button(
+                        text: 'Request',
+                        bgColor: Color(0xFF1F2123),
+                        textColor: Colors.white)
                   ],
                 )
               ],
